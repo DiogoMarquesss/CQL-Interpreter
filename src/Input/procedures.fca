@@ -1,0 +1,6 @@
+PROCEDURE atualizar_observacoes DO
+    IMPORT TABLE observacoes FROM "observacoes.csv";
+    IMPORT TABLE estacoes FROM "estacoes.csv";
+    CREATE TABLE mais_quentes SELECT * FROM observacoes WHERE Temperatura > 22 ;
+    CREATE TABLE completo FROM estacoes JOIN observacoes USING("Id");
+END

@@ -1,0 +1,2 @@
+IMPORT TABLE observacoes FROM "observacoes.csv";
+EXPORT TABLE observacoes AS "filename.csv";
